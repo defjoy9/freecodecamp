@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+    </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Please provide brief information about yourself to connect better!</p>
+    
+    <form id="survey-form">
+      <label for="name">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+      <label for="email">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
+      <label for="number">Age (optional) <input type="number" id="number" min="13" max="120" placeholder="Age"></label>
+      <label >Which game are you playing right now? 
+      <select id="dropdown" name="dropdown">
+        <option value="">Select an option</option>
+        <option value="1">Assassin's Creed Valhalla</option>
+        <option value="2">Assassin's Creed Odessey</option>
+        <option value="3">Assassin's Creed Black Flag</option>
+      </select></label>
+      <hr>
+      <p class="question">Did you finish it?</p>
+      <label for="opt-y"><input type="radio" id="opt-y" name="game-progress"> Yes</label>
+      <label for="opt-n"><input type="radio" id="opt-n" name="game-progress"> No</label>
+      <label for="opt-p"><input type="radio" id="opt-p" name="game-progress"> In process</label>
+
+      
+      <p class="question">What other games do you play?</p>
+      <label for="1"><input type="checkbox" id="1" value="other-games">Sid Meier's Civilization VI</label>
+      <label for="2"><input type="checkbox" id="2" value="other-games">GTA V</label>
+      <label for="3"><input type="checkbox" id="3" value="other-games">Red Dead Redemption 2</label>
+      <label for="4"><input type="checkbox" id="4" value="other-games">Dying Light</label>
+      <label for="5"><input type="checkbox" id="5" value="other-games">God of War</label>
+      <label for="6"><input type="checkbox" id="6" value="other-games">PC Building Simulator 2</label>
+      <label for="7"><input type="checkbox" id="7" value="other-games">Cities Skylines</label>
+      <label for="8"><input type="checkbox" id="8" value="other-games">Skyrim</label>
+      <label for="9"><input type="checkbox" id="9" value="other-games">Watch Dogs 2</label>
+      <label for="10"><input type="checkbox" id="10" value="other-games">Cyberpunk 2077</label>
+      <label for="11"><input type="checkbox" id="11" value="other-games">FIFA 23</label>
+      <label for="12"><input type="checkbox" id="12" value="other-games">Valorant</label>
+      <label for="13"><input type="checkbox" id="13" value="other-games">Other</label>
+      <hr>
+      <label for="opinion">What's your opinion about computer games? <textarea id="opinion" name="opinion" rows="3" cols="30" placeholder="I think that..."></textarea></label>
+      <input type="submit" id="submit value="Submit">
+    </form>
+  
+
+  </body>
+  
+</html>
