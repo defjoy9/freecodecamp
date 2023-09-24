@@ -9,9 +9,9 @@
     <p id="description">Please provide brief information about yourself to connect better!</p>
     
     <form id="survey-form">
-      <label for="name">Name <input type="text" id="name" placeholder="Enter your name" required></label>
-      <label for="email">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
-      <label for="number">Age (optional) <input type="number" id="number" min="13" max="120" placeholder="Age"></label>
+      <label id="name-label" for="name" >Name <input type="text" id="name" placeholder="Enter your name" required></label>
+      <label id="email-label" for="email">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
+      <label id="number-label" for="number">Age (optional) <input type="number" id="number" min="13" max="120" placeholder="Age"></label>
       <label >Which game are you playing right now? 
       <select id="dropdown" name="dropdown">
         <option value="">Select an option</option>
@@ -21,9 +21,9 @@
       </select></label>
       <hr>
       <p class="question">Did you finish it?</p>
-      <label for="opt-y"><input type="radio" id="opt-y" name="game-progress"> Yes</label>
-      <label for="opt-n"><input type="radio" id="opt-n" name="game-progress"> No</label>
-      <label for="opt-p"><input type="radio" id="opt-p" name="game-progress"> In process</label>
+      <label for="opt-y"><input type="radio" id="opt-y" name="game-progress" value="Yes"> Yes</label>
+      <label for="opt-n"><input type="radio" id="opt-n" name="game-progress" value="No"> No</label>
+      <label for="opt-p"><input type="radio" id="opt-p" name="game-progress" value="In-progress"> In process</label>
 
       
       <p class="question">What other games do you play?</p>
@@ -42,7 +42,7 @@
       <label for="13"><input type="checkbox" id="13" value="other-games">Other</label>
       <hr>
       <label for="opinion">What's your opinion about computer games? <textarea id="opinion" name="opinion" rows="3" cols="30" placeholder="I think that..."></textarea></label>
-      <input type="submit" id="submit value="Submit">
+      <input type="submit" id="submit" value="Submit">
     </form>
   
 
